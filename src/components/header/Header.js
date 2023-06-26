@@ -37,7 +37,8 @@ return (
             }}
             validationSchema={Yup.object({
               status: Yup.string()
-                .required('Введите новый статус')
+                      .max(40, 'Максимальное количество символов: 40')
+                      .required('Введите новый статус')
             })}
             onSubmit={({ status }, { resetForm }) => {
               setStatus(status);

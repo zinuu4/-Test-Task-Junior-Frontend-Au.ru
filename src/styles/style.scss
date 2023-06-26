@@ -49,3 +49,32 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
   margin: 0 auto;
   margin-top: 32px;
 }
+
+@media (max-width: 992px) {
+  .divider {
+    width: 740px;
+  }
+  .container {
+    width: 740px;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .divider {
+    width: 540px;
+  }
+  .container {
+    width: 556px;
+  }
+}
+
+@media (max-width: 576px) {
+  .divider {
+    width: 300px;
+  }
+  .container {
+    width: 310px;
+    padding: 0 5px;
+  }
+}
